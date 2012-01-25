@@ -5,6 +5,12 @@ This is a version of GitHub's Campfire bot, hubot. He's pretty cool.
 
 This version is designed to be deployed on heroku.
 
+PreReq on Snow Leopard
+======================
+> brew install node
+> curl http://npmjs.org/install.sh | sh
+> brew install redis 
+
 Playing with Hubot
 ==================
 
