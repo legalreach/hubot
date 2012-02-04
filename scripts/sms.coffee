@@ -5,7 +5,7 @@
 QS = require "querystring"
 
 module.exports = (robot) ->
-  robot.respond /sms (\d+) (.*)/i, (msg) ->
+  robot.respond /sms (\w+) (.*)/i, (msg) ->
     to    = msg.match[1]
     if to.toLowerCase() == "shawn"
       to = "4047139704"
