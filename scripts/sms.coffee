@@ -7,6 +7,13 @@ QS = require "querystring"
 module.exports = (robot) ->
   robot.respond /sms (\d+) (.*)/i, (msg) ->
     to    = msg.match[1]
+    if to.toLowerCase() == "shawn"
+      to = "4047139704"
+    else if to.toLowerCase() == "avlok"
+      to = "4158138549"
+    else if to.toLowerCase() == "apoorva" 
+      to = "2069532159"
+
     bahdy = msg.match[2] # bahdy, that's how john mayer would say it.
     sid   = process.env.HUBOT_SMS_SID
     tkn   = process.env.HUBOT_SMS_TOKEN
