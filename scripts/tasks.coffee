@@ -32,7 +32,7 @@ module.exports = (robot) ->
 
   robot.respond /(task add|add task) (.+?)$/i, (msg) ->
     task = tasks.add msg.match[2]
-    msg.send "Task added: ##{task.num} - #{task.task}"
+    msg.send "Task added for #{msg.message.user.name}: ##{task.num} - #{task.task}"
 
   robot.respond /(task list|list tasks)/i, (msg) ->
     if tasks.all().length > 0
