@@ -9,6 +9,6 @@ module.exports = (robot) ->
       "Stay Focused, Keep Shipping. - Zuck/Facebook"
     ]
 
-    response = quotes.first
+    response = quotes[0]
 
     msg.send(response)
