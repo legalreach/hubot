@@ -3,11 +3,10 @@
 # coffee me <query>    
 
 module.exports = (robot) ->
-  robot.respond /(coffee)( me)? ("coffe is awesome".*)/i, (msg) ->
-    imageMe msg, msg.match[3], (url) ->
+  robot.respond /coffee me/i, (msg) ->
+    imageMe msg, "coffee", (url) ->
       msg.send url
-
-
+      
 imageMe = (msg, query, cb) ->
   msg.http('http://ajax.googleapis.com/ajax/services/search/images')
     .query(v: "1.0", rsz: '8', q: query)
@@ -16,4 +15,3 @@ imageMe = (msg, query, cb) ->
       images = images.responseData.results
       image  = msg.random images
       cb "#{image.unescapedUrl}#.png"
-
