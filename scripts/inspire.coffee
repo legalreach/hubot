@@ -1,9 +1,9 @@
 # Hubot inspires
 #
-# inspire - gives back a random quote of inspiration
+# inspire me - gives back a random quote of inspiration
 
 module.exports = (robot) ->
-  robot.respond /inspire\s?(.*)/i, (msg) ->
+  robot.respond /inspire me/i, (msg) ->
     
     quotes = [
       "Stay Focused, Keep Shipping. - Zuck/Facebook"
