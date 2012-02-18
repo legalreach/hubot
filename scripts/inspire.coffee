@@ -15,7 +15,8 @@ module.exports = (robot) ->
       "Always Optimize for Happiness - Tom/Github",
       "Entrepreneurs, he says, often spend too much time creating products and too little figuring out how to get people to use them. - Reid/LinkedIn",
       "Proceed and Be Bold. - Zuck/Facebook",
-      "What would you do if you weren't afraid? - Zuck/Facebook"
+      "What would you do if you weren't afraid? - Zuck/Facebook",
+      "We don’t build services to make money; We make money to build better services. - Zuck/Facebook"
     ]
 
     response = quotes[Math.floor(Math.random() * quotes.length)]
