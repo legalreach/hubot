@@ -13,7 +13,9 @@ module.exports = (robot) ->
       "It's not what we can build. All the things that we can take away from this world are going to be things that drive adoption. - Jack/Square/Twitter",
       "Stuff you decide not to do is just as important as things you decide to do. - Jack/Square/Twitter",
       "Always Optimize for Happiness - Tom/Github",
-      "Entrepreneurs, he says, often spend too much time creating products and too little figuring out how to get people to use them. - Reid/LinkedIn"
+      "Entrepreneurs, he says, often spend too much time creating products and too little figuring out how to get people to use them. - Reid/LinkedIn",
+      "Proceed and Be Bold. - Zuck/Facebook",
+      "What would you do if you weren't afraid? - Zuck/Facebook"
     ]
 
     response = quotes[Math.floor(Math.random() * quotes.length)]
