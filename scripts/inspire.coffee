@@ -12,7 +12,8 @@ module.exports = (robot) ->
       "Make every detail perfect and limit the # of details. - Jack/Square/Twitter",
       "It's not what we can build. All the things that we can take away from this world are going to be things that drive adoption. - Jack/Square/Twitter",
       "Stuff you decide not to do is just as important as things you decide to do. - Jack/Square/Twitter",
-      "Always Optimize for Happiness - Tom/Github"
+      "Always Optimize for Happiness - Tom/Github",
+      "Entrepreneurs, he says, often spend too much time creating products and too little figuring out how to get people to use them. - Reid/LinkedIn"
     ]
 
     response = quotes[Math.floor(Math.random() * quotes.length)]
