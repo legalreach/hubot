@@ -4,9 +4,8 @@
 
 module.exports = (robot) ->
   robot.respond /(coffee)( me)? (.*)/i, (msg) ->
-    imageMe coffee is awesome, (url) ->
+    imageMe "coffee is awesome", msg.match[3], (url) ->
       msg.send url
-
 
 
 imageMe = (msg, query, cb) ->
