@@ -1,10 +1,10 @@
 # Returns awesome coffee image from Google. 
 #
-# coffee me <query>    - The Original. Queries Google Images for <query> and
+# coffee me <query>    
 
 module.exports = (robot) ->
-  robot.respond /(coffee)( me)? (.*)/i, (msg) ->
-    imageMe "coffee is awesome", msg.match[3], (url) ->
+  robot.respond /(coffee)( me)? ("coffe is awesome".*)/i, (msg) ->
+    imageMe msg, msg.match[3], (url) ->
       msg.send url
 
 
