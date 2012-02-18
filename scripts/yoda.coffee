@@ -1,6 +1,12 @@
+# Hubot yoda
+#
+# yoda me - gives back a random quote of inspiration
+
 module.exports = (robot) ->
-  robot.hear /^yoda me$/i, (msg) ->
-    quotes = ["Agree with you, the council does. Your apprentice, Skywalker will be.",
+  robot.respond /yoda me/i, (msg) ->
+    
+    quotes = [
+      "Agree with you, the council does. Your apprentice, Skywalker will be.",
     "Always two there are, no more, no less: a master and an apprentice.",
     "Fear is the path to the Dark Side. Fear leads to anger, anger leads to hate; hate leads to suffering. I sense much fear in you.",
     "Qui-Gon's defiance I sense in you.",
@@ -23,6 +29,9 @@ module.exports = (robot) ->
     "Always in motion the future is.",
     "Reckless he is. Matters are worse.",
     "When nine hundred years old you reach, look as good, you will not.",
-    "No. There is... another... Sky... walker..."]
-    msg.send msg.random quotes
-    
+    "No. There is... another... Sky... walker..."
+    ]
+
+    response = quotes[Math.floor(Math.random() * quotes.length)]
+
+    msg.send(response)
