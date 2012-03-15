@@ -13,4 +13,4 @@ module.exports = (robot) ->
         robot.reply(null, "hello")  
         res.end()
 
-  server.listen 9292
+  server.listen 9292, "0.0.0.0"
