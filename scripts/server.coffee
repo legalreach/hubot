@@ -10,6 +10,7 @@ module.exports = (robot) ->
         data += chunk
 
       req.on "end", ->
-        body = JSON.parse data
-        # ...
-  server.listen 9292
+        robot.reply(null, "hello")  
+        res.end()
+
+  server.listen 9292, "0.0.0.0"
