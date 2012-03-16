@@ -12,7 +12,7 @@ module.exports = (robot) ->
       req.on "end", ->
         console.log("users: %j", robot.users)
         console.log("brain: %j", @brain)
-        robot.reply(robot.users.first, "hello")  
+        robot.receive("hello")  
         res.end()
 
   server.listen process.env.PORT, "0.0.0.0"
