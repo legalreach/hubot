@@ -10,7 +10,7 @@ module.exports = (robot) ->
         data += chunk
 
       req.on "end", ->
-        robot.reply(null, "hello")  
+        robot.reply(robot.users[0], "hello")  
         res.end()
 
   server.listen process.env.PORT, "0.0.0.0"
