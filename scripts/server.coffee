@@ -10,8 +10,6 @@ module.exports = (robot) ->
         data += chunk
 
       req.on "end", ->
-        console.log("users: %j", robot.users)
-        console.log("brain: %j", @brain)
         robot.receive(robot, "hello")  
         res.end()
 
