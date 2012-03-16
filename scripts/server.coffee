@@ -13,4 +13,4 @@ module.exports = (robot) ->
         robot.reply(null, "hello")  
         res.end()
 
-  server.listen 80, "0.0.0.0"
+  server.listen process.env.PORT, "0.0.0.0"
