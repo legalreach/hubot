@@ -1,35 +1,38 @@
 # Hubot yoda
 #
-# yoda me - gives back a random quote of inspiration
+# uxyoda me - gives back a random quote of inspiration
 
 module.exports = (robot) ->
   robot.respond /yoda me/i, (msg) ->
     
     quotes = [
-      "Agree with you, the council does. Your apprentice, Skywalker will be.",
-    "Always two there are, no more, no less: a master and an apprentice.",
-    "Fear is the path to the Dark Side. Fear leads to anger, anger leads to hate; hate leads to suffering. I sense much fear in you.",
-    "Qui-Gon's defiance I sense in you.",
-    "Truly wonderful the mind of a child is.",
-    "Around the survivors a perimeter create.",
-    "Lost a planet Master Obi-Wan has. How embarrassing … how embarrassing.",
-    "Victory, you say? Master Obi-Wan, not victory. The shroud of the Dark Side has fallen. Begun the Clone War has.",
-    "Much to learn you still have...my old padawan... This is just the beginning!",
-    "Twisted by the Dark Side young Skywalker has become.",
-    "The boy you trained, gone he is, consumed by Darth Vader.",
-    "Death is a natural part of life. Rejoice for those around you who transform into the Force. Mourn them do not. Miss them do not. Attachment leads to jealousy. The shadow of greed that is. Train yourself to let go of everything you fear to lose.",
-    "The fear of loss is a path to the Dark Side.",
-    "If into the security recordings you go, only pain will you find.",
-    "Not if anything to say about it I have.",
-    "Great warrior, hmm? Wars not make one great.",
-    "Do or do not; there is no try.",
-    "Size matters not. Look at me. Judge me by my size, do you?",
-    "That is why you fail.",
-    "No! No different. Only different in your mind. You must unlearn what you have learned.",
-    "Always in motion the future is.",
-    "Reckless he is. Matters are worse.",
-    "When nine hundred years old you reach, look as good, you will not.",
-    "No. There is... another... Sky... walker..."
+    "Only good a solution, if real the problem is.",
+    "Minimalist design. Less design it is not.",
+    "Service and product. Neglect one and die the other will. Hmmmhmm.",
+    "You must remove interaction to improve interaction.",
+    "Focus group. Much irony in that term yes. Mhhmmhm.",
+    "The more you say, the less you are heard Hhhmmmmhm.",
+    "Harder to destroy a design if emotionally attached to it you become. And destroy it you must if it fails.",
+    "Ok to "make things up", "pull from thin air". A creative process design is. Be creative. But test you must. Hhhmmm.",
+    "Many needs remain unseen. Until reveal them a new technology does. Invention this is.",
+    "Design thinking. A fine balance between over and under thinking yes. Mhhmmhmm.",
+    "Not just from the design team creativity must flow, if great products you are to build.",
+    "Social and private, humans are. Appreciates this good design does. Mmmmhh.",
+    "When new element you add to a screen, evaluate design of existing elements, ensure visual hierarchy remains intact.",
+    "Agree with it you do not have to. But never wrong is honest critique. Mmmmm.",
+    "Complexity. Confusing it need not be.",
+    "User error it may be. But your responsibility it is.",
+    "No such thing as user testing. Testing users you are not. Testing your product you are. Mmmmm.",
+    "Drawing conclusions from data without first understanding that what drives your users. A path to the dark side this is.",
+    "Remove confirm dialogues. Assume correct action taken. Way to reverse action you should provide. A confident app and customer you will have.",
+    "Design thinking, good. Design doing better.",
+    "A UX team your entire company is.",
+    "Focus not on what customers think. Focus on what they Do.",
+    "If reinvent the wheel nobody does. Speeder bikes you will not get. Mmmhmm.",
+    "Be not afraid of collaboration. Single vision not single mind, great products spring from.",
+    "Latency leads to frustration. Frustration to anger... anger to new tab."
+
+    
     ]
 
     response = quotes[Math.floor(Math.random() * quotes.length)]
