@@ -13,7 +13,7 @@ module.exports = (robot) ->
     "Focus group. Much irony in that term yes. Mhhmmhm.",
     "The more you say, the less you are heard Hhhmmmmhm.",
     "Harder to destroy a design if emotionally attached to it you become. And destroy it you must if it fails.",
-    "Ok to "make things up", "pull from thin air". A creative process design is. Be creative. But test you must. Hhhmmm.",
+    "Ok to 'make things up', 'pull from thin air'. A creative process design is. Be creative. But test you must. Hhhmmm.",
     "Many needs remain unseen. Until reveal them a new technology does. Invention this is.",
     "Design thinking. A fine balance between over and under thinking yes. Mhhmmhmm.",
     "Not just from the design team creativity must flow, if great products you are to build.",

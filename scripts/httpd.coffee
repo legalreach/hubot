@@ -1,15 +1,21 @@
+HttpClient = require 'scoped-http-client'
+
 # A simple interaction with the built in HTTP Daemon
 spawn = require('child_process').spawn
 
 module.exports = (robot) ->
   robot.router.get "/hubot/version", (req, res) ->
-    robot.messageRoom("469840", "getting the version #")
-    robot.messageRoom("Room 1", "getting the version #")
     res.end robot.version
+  
+  robot.router.get "/hubot/communicate_error", (req, res) ->
+    res.end "Bam"
+  
   robot.router.post "/hubot/ping", (req, res) ->
     res.end "PONG"
+  
   robot.router.get "/hubot/time", (req, res) ->
     res.end "Server time is: #{new Date()}"
+  
   robot.router.get "/hubot/info", (req, res) ->
     child = spawn('/bin/sh', ['-c', "echo I\\'m $LOGNAME@$(hostname):$(pwd) \\($(git rev-parse HEAD)\\)"])
 
